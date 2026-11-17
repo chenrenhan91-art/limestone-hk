@@ -1,7 +1,6 @@
 const i18nData = {
   tc: {
     nav_services: "核心業務",
-    nav_solutions: "投放架構",
     nav_workflow: "執行流程",
     nav_company: "企業資訊",
     nav_cta: "業務諮詢",
@@ -60,16 +59,6 @@ const i18nData = {
     s6_tag1: "投放政策合規預審",
     s6_tag2: "帳戶資產架構規範",
     s6_tag3: "預算安全風控",
-    explorer_title: "全漏斗投放策略架構",
-    explorer_sub: "點擊切換不同投放階段，查看石岩（香港）科技有限公司在各階段的執行重點與管控維度。",
-    tab1_title: "頂層觸達 · 流量獲取 (Prospecting)",
-    tab1_sub: "冷啟動測試與潛在受眾探索",
-    tab2_title: "中層培育 · 意向強化 (Engagement)",
-    tab2_sub: "高互動人群篩選與賣點深化",
-    tab3_title: "底層收割 · 轉化閉環 (Conversion)",
-    tab3_sub: "精準重定向與出價效率極大化",
-    tab4_title: "長效留存 · 數據沉澱 (Retention)",
-    tab4_sub: "人群資產沉澱與排除規則優化",
     workflow_title: "標準化廣告投放執行流程",
     workflow_sub: "以嚴謹的工程化標準管理每一次廣告活動，確保策略落地與預算執行透明可控。",
     w1_title: "需求調研與帳戶診斷",
@@ -111,7 +100,6 @@ const i18nData = {
   },
   sc: {
     nav_services: "核心业务",
-    nav_solutions: "投放架构",
     nav_workflow: "执行流程",
     nav_company: "企业信息",
     nav_cta: "业务咨询",
@@ -170,16 +158,6 @@ const i18nData = {
     s6_tag1: "投放政策合规预审",
     s6_tag2: "账户资产架构规范",
     s6_tag3: "预算安全风控",
-    explorer_title: "全漏斗投放策略架构",
-    explorer_sub: "点击切换不同投放阶段，查看石岩（香港）科技有限公司在各阶段的执行重点与管控维度。",
-    tab1_title: "顶层触达 · 流量获取 (Prospecting)",
-    tab1_sub: "冷启动测试与潜在受众探索",
-    tab2_title: "中层培育 · 意向强化 (Engagement)",
-    tab2_sub: "高互动人群筛选与卖点深化",
-    tab3_title: "底层收割 · 转化闭环 (Conversion)",
-    tab3_sub: "精准重定向与出价效率最大化",
-    tab4_title: "长效留存 · 数据沉淀 (Retention)",
-    tab4_sub: "人群资产沉淀与排除规则优化",
     workflow_title: "标准化广告投放执行流程",
     workflow_sub: "以严谨的工程化标准管理每一次广告活动，确保策略落地与预算执行透明可控。",
     w1_title: "需求调研与账户诊断",
@@ -221,7 +199,6 @@ const i18nData = {
   },
   en: {
     nav_services: "Services",
-    nav_solutions: "Architecture",
     nav_workflow: "Workflow",
     nav_company: "Corporate Info",
     nav_cta: "Inquire",
@@ -280,16 +257,6 @@ const i18nData = {
     s6_tag1: "Policy Pre-Audit",
     s6_tag2: "Asset Governance",
     s6_tag3: "Budget Pacing Controls",
-    explorer_title: "Full-Funnel Media Buying Architecture",
-    explorer_sub: "Select a funnel stage below to inspect Limestone (HK) Limited's operational focus and optimization controls.",
-    tab1_title: "Stage 01 · Prospecting & Reach",
-    tab1_sub: "Cold traffic validation & audience discovery",
-    tab2_title: "Stage 02 · Engagement & Consideration",
-    tab2_sub: "High-intent filtering & value proposition delivery",
-    tab3_title: "Stage 03 · Conversion & Acquisition",
-    tab3_sub: "Precision retargeting & bid efficiency optimization",
-    tab4_title: "Stage 04 · Retention & Audience Hygiene",
-    tab4_sub: "First-party signal refinement & exclusion rules",
     workflow_title: "Standardized Campaign Execution Workflow",
     workflow_sub: "Every advertising campaign follows a structured engineering workflow for transparent budget governance.",
     w1_title: "Discovery & Account Audit",
@@ -331,149 +298,7 @@ const i18nData = {
   }
 };
 
-const funnelStages = {
-  tc: [
-    {
-      badge: "STAGE 01 · PROSPECTING",
-      title: "頂層觸達：廣域流量測試與受眾探索",
-      desc: "通過多組受眾定向（關鍵詞意圖包、核心興趣詞及廣泛匹配算法探索）結合多角度首屏素材，快速識別具備商業潛力的目標受眾群體，建立基礎流量池。",
-      spec1_label: "定向策略",
-      spec1_val: "核心意圖詞 + 興趣圖譜分層",
-      spec2_label: "素材重點",
-      spec2_val: "痛點場景切入與多變量首屏測試",
-      spec3_label: "核心監控指標",
-      spec3_val: "千次展示成本 (CPM) / 有效點擊率 (CTR)"
-    },
-    {
-      badge: "STAGE 02 · ENGAGEMENT",
-      title: "中層培育：高意向互動人群篩選",
-      desc: "針對廣告視頻完播人群、落地頁深度瀏覽訪客及社交主頁互動用戶進行二次分層，投遞產品核心差異化賣點與解決方案對比內容，強化品牌信任度。",
-      spec1_label: "定向策略",
-      spec1_val: "視頻互動人群 + 頁面停留行為定向",
-      spec2_label: "素材重點",
-      spec2_val: "功能細節演示與使用場景拆解",
-      spec3_label: "核心監控指標",
-      spec3_val: "互動成本 (CPE) / 落地頁到達率"
-    },
-    {
-      badge: "STAGE 03 · CONVERSION",
-      title: "底層收割：精準重定向與轉化閉環",
-      desc: "聚焦高意向未轉化訪客（如發起諮詢、加入購物車或瀏覽核心方案頁人群），配合動態出價策略與清晰行動號召（CTA），縮短決策路徑並優化轉化成本。",
-      spec1_label: "定向策略",
-      spec1_val: "時間窗分層重定向 (7D / 14D / 30D)",
-      spec2_label: "素材重點",
-      spec2_val: "明確行動號召與合規服務保障說明",
-      spec3_label: "核心監控指標",
-      spec3_val: "單次轉化成本 (CPA) / 轉化率 (CVR)"
-    },
-    {
-      badge: "STAGE 04 · RETENTION",
-      title: "長效留存：人群資產沉澱與排除規則",
-      desc: "將已轉化人群實時同步至排除列表以避免重複曝光浪費預算，同時基於高價值轉化樣本構建相似受眾（Lookalike）種子包，反哺頂層獲客效率。",
-      spec1_label: "定向策略",
-      spec1_val: "已轉化人群排除 + 高價值種子拓展",
-      spec2_label: "素材重點",
-      spec2_val: "長週期版本更新與新業務線觸達",
-      spec3_label: "核心監控指標",
-      spec3_val: "頻次控制 (Frequency) / 廣告支出回報比"
-    }
-  ],
-  sc: [
-    {
-      badge: "STAGE 01 · PROSPECTING",
-      title: "顶层触达：广域流量测试与受众探索",
-      desc: "通过多组受众定向（关键词意图包、核心兴趣词及广泛匹配算法探索）结合多角度首屏素材，快速识别具备商业潜力的目标受众群体，建立基础流量池。",
-      spec1_label: "定向策略",
-      spec1_val: "核心意图词 + 兴趣图谱分层",
-      spec2_label: "素材重点",
-      spec2_val: "痛点场景切入与多变量首屏测试",
-      spec3_label: "核心监控指标",
-      spec3_val: "千次展示成本 (CPM) / 有效点击率 (CTR)"
-    },
-    {
-      badge: "STAGE 02 · ENGAGEMENT",
-      title: "中层培育：高意向互动人群筛选",
-      desc: "针对广告视频完播人群、落地页深度浏览访客及社交主页互动用户进行二次分层，投递产品核心差异化卖点与解决方案对比内容，强化品牌信任度。",
-      spec1_label: "定向策略",
-      spec1_val: "视频互动人群 + 页面停留行为定向",
-      spec2_label: "素材重点",
-      spec2_val: "功能细节演示与使用场景拆解",
-      spec3_label: "核心监控指标",
-      spec3_val: "互动成本 (CPE) / 落地页到达率"
-    },
-    {
-      badge: "STAGE 03 · CONVERSION",
-      title: "底层收割：精准重定向与转化闭环",
-      desc: "聚焦高意向未转化访客（如发起咨询、加入购物车或浏览核心方案页人群），配合动态出价策略与清晰行动号召（CTA），缩短决策路径并优化转化成本。",
-      spec1_label: "定向策略",
-      spec1_val: "时间窗分层重定向 (7D / 14D / 30D)",
-      spec2_label: "素材重点",
-      spec2_val: "明确行动号召与合规服务保障说明",
-      spec3_label: "核心监控指标",
-      spec3_val: "单次转化成本 (CPA) / 转化率 (CVR)"
-    },
-    {
-      badge: "STAGE 04 · RETENTION",
-      title: "长效留存：人群资产沉淀与排除规则",
-      desc: "将已转化人群实时同步至排除列表以避免重复曝光浪费预算，同时基于高价值转化样本构建相似受众（Lookalike）种子包，反哺顶层获客效率。",
-      spec1_label: "定向策略",
-      spec1_val: "已转化人群排除 + 高价值种子拓展",
-      spec2_label: "素材重点",
-      spec2_val: "长周期版本更新与新业务线触达",
-      spec3_label: "核心监控指标",
-      spec3_val: "频次控制 (Frequency) / 广告支出回报比"
-    }
-  ],
-  en: [
-    {
-      badge: "STAGE 01 · PROSPECTING",
-      title: "Top-of-Funnel: Audience Discovery & Reach Validation",
-      desc: "Deploy structured audience segments combining search intent clusters and interest graphs alongside multivariate creative hooks to identify scalable traffic pockets.",
-      spec1_label: "Targeting Mechanics",
-      spec1_val: "Intent Clusters & Interest Tiering",
-      spec2_label: "Creative Focus",
-      spec2_val: "Problem-Solution Hooks & A/B Matrix",
-      spec3_label: "Primary KPIs",
-      spec3_val: "CPM Efficiency & Outbound CTR"
-    },
-    {
-      badge: "STAGE 02 · ENGAGEMENT",
-      title: "Mid-Funnel: High-Intent Signal Filtering",
-      desc: "Segment video completers, deep scroll visitors, and engaged social profiles to deliver feature breakdowns and structured product comparisons.",
-      spec1_label: "Targeting Mechanics",
-      spec1_val: "Video Viewers & Session Depth Cohorts",
-      spec2_label: "Creative Focus",
-      spec2_val: "Product Walkthroughs & Feature Proof",
-      spec3_label: "Primary KPIs",
-      spec3_val: "Cost Per Engagement & Landing View Rate"
-    },
-    {
-      badge: "STAGE 03 · CONVERSION",
-      title: "Bottom-of-Funnel: Precision Retargeting & Acquisition",
-      desc: "Re-engage high-intent visitors across segmented lookback windows using conversion-optimized bidding and frictionless landing page experiences.",
-      spec1_label: "Targeting Mechanics",
-      spec1_val: "Time-Window Retargeting (7D / 14D / 30D)",
-      spec2_label: "Creative Focus",
-      spec2_val: "Direct Call-to-Action & Compliance Clarity",
-      spec3_label: "Primary KPIs",
-      spec3_val: "Cost Per Acquisition (CPA) & CVR"
-    },
-    {
-      badge: "STAGE 04 · RETENTION",
-      title: "Post-Conversion: Audience Hygiene & Seed Modeling",
-      desc: "Synchronize converted cohorts into real-time suppression lists to eliminate wasted ad spend while feeding high-value seed signals into lookalike models.",
-      spec1_label: "Targeting Mechanics",
-      spec1_val: "Suppression Lists & Lookalike Seeds",
-      spec2_label: "Creative Focus",
-      spec2_val: "Cross-Sell & Lifecycle Announcements",
-      spec3_label: "Primary KPIs",
-      spec3_val: "Frequency Cap Hygiene & ROAS Stability"
-    }
-  ]
-};
-
 let currentLang = "tc";
-let currentStageIndex = 0;
 
 function renderLanguage(lang) {
   currentLang = lang;
@@ -497,28 +322,6 @@ function renderLanguage(lang) {
     btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
   });
 
-  renderFunnelStage(currentStageIndex);
-}
-
-function renderFunnelStage(index) {
-  currentStageIndex = index;
-  const stageList = funnelStages[currentLang] || funnelStages.tc;
-  const stage = stageList[index];
-  if (!stage) return;
-
-  document.getElementById("panel-badge").textContent = stage.badge;
-  document.getElementById("panel-title").textContent = stage.title;
-  document.getElementById("panel-desc").textContent = stage.desc;
-  document.getElementById("spec1-label").textContent = stage.spec1_label;
-  document.getElementById("spec1-val").textContent = stage.spec1_val;
-  document.getElementById("spec2-label").textContent = stage.spec2_label;
-  document.getElementById("spec2-val").textContent = stage.spec2_val;
-  document.getElementById("spec3-label").textContent = stage.spec3_label;
-  document.getElementById("spec3-val").textContent = stage.spec3_val;
-
-  document.querySelectorAll(".explorer-tab").forEach((tab, idx) => {
-    tab.classList.toggle("active", idx === index);
-  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -526,13 +329,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       renderLanguage(btn.getAttribute("data-lang"));
-    });
-  });
-
-  // Funnel stage tabs
-  document.querySelectorAll(".explorer-tab").forEach((tab, idx) => {
-    tab.addEventListener("click", () => {
-      renderFunnelStage(idx);
     });
   });
 
